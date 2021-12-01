@@ -6,16 +6,13 @@ const app = express();
 
 connectDb();
 
-//TODO: Test all routes in Postman. Export collection and include in repository with instructions on how to import and use with API
-/**
- * POST register TESTED SUCCESS
- * POST login TESTED SUCCESS
- * GET all users TESTED SUCCESS
- * DELETE a user TESTED SUCCESS
- */
-//TODO: Add README with detailed instructions on how to set up and use API
-//TODO: Add TODO comments and informational comments throughout to clarify concepts
-//TODO: Add instruction on installing the Better Comments extension to make instructional comments easier to interact with
+//TODO: Install the Better Comments extension from Visual Studio Code Marketplace (extensions icon to the left)
+//! WARNING - DO NOT PROCEED TO THE COMMENTS BELOW UNTIL YOU HAVE COMPLETED THE SETUP OUTLINED IN THE "Social_Media_App_Project_Framework" document!
+
+//TODO: Add appropriate schemas/models to the models folder.
+//! NOTE - you can modify the user.js schema, but make sure to adjust validation accordingly!
+//TODO: Add routes to the routes folder. By convention, there should be a file for each schema/model
+//! NOTE - for each route file, don't forget to import your router into index.js and add a new app.use statement below!
 
 app.use(cors());
 app.use(express.json());
