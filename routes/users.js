@@ -22,6 +22,7 @@ router.post("/register", async (req, res) => {
       name: req.body.name,
       email: req.body.email,
       password: await bcrypt.hash(req.body.password, salt),
+      isAdmin: req.body.isAdmin,
     });
 
     await user.save();
@@ -29,7 +30,12 @@ router.post("/register", async (req, res) => {
     return res
       .header("x-auth-token", token)
       .header("access-control-expose-headers", "x-auth-token")
-      .send({ _id: user._id, name: user.name, email: user.email });
+      .send({
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+        isAdmin: user.isAdmin,
+      });
   } catch (ex) {
     return res.status(500).send(`Internal Server Error: ${ex}`);
   }

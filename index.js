@@ -9,15 +9,13 @@ connectDb();
 //TODO: Test all routes in Postman. Export collection and include in repository with instructions on how to import and use with API
 /**
  * POST register TESTED SUCCESS
- * POST login NOT TESTED
- * GET all users NOT TESTED
- * DELETE a user NOT TESTED
+ * POST login TESTED SUCCESS
+ * GET all users TESTED SUCCESS
+ * DELETE a user TESTED SUCCESS
  */
 //TODO: Add README with detailed instructions on how to set up and use API
 //TODO: Add TODO comments and informational comments throughout to clarify concepts
-//TODO: Add MongoDb VSCode extension connection for grading database
-
-//! Add instruction on installing the Better Comments extension to make instructional comments easier to interact with
+//TODO: Add instruction on installing the Better Comments extension to make instructional comments easier to interact with
 
 app.use(cors());
 app.use(express.json());
